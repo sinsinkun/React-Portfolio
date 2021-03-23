@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useEffect, useContext } from 'react';
 import { winDimContext } from '../App';
+import './style.css';
 
 function Navbar(props) {
 

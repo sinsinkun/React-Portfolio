@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Homepage from './components/Homepage';
 import Page404 from './components/Page404';
+import Navbar from './components/Navbar';
 import SideNav from './components/Sidenav';
 import Footer from './components/Footer';
+import Homepage from './components/About';
+import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
+import './components/style.css';
 
 const winDimContext = React.createContext();
 
@@ -22,7 +25,7 @@ function App() {
   })
 
   return (
-    <div className="App d-flex flex-column" style={{minHeight:"100vh", backgroundColor:"rgb(230,235,240)"}}>
+    <div className="App d-flex flex-column">
       <winDimContext.Provider value={winDim}>
         <Router basename={process.env.PUBLIC_URL}>
           {/* Navbar */}
@@ -32,9 +35,12 @@ function App() {
           <div className="container-md">
             <Switch>
               <Route exact path="/"><Homepage /></Route>
+              <Route path="/projects"><Projects /></Route>
+              <Route path="/contact"><ContactMe /></Route>
               <Route><Page404 /></Route>
             </Switch>
           </div>
+          {/* Footer */}
           <Footer />
         </Router>
       </winDimContext.Provider>
