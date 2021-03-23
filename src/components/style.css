@@ -28,15 +28,24 @@
   height: calc(100vh - 7rem);
   top: 3.5rem;
   right: 0;
-  width: 40vw;
+  width: 50vw;
   z-index: 30;
   text-align: right;
   white-space: nowrap;
   padding: 0.2rem 1rem;
-  animation: sideNavSlide 0.5s;
+  animation: sideNavSlide 0.3s;
 } 
 
+.side-nav-close {
+  animation: hideNavSlide 0.3s;
+}
+
 @keyframes sideNavSlide {
-  0% {width: 0}
-  100% {width: 40vw}
+  0% {width: 0; opacity: 0;}
+  100% {width: 50vw; opacity: 100%;}
+}
+
+@keyframes hideNavSlide {
+  0% {width: 50vw; opacity: 100%;}
+  100% {width: 0; opacity: 0;}
 }

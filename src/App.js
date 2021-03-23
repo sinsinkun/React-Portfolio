@@ -30,7 +30,7 @@ function App() {
         <Router basename={process.env.PUBLIC_URL}>
           {/* Navbar */}
           <Navbar showSideNav={showSideNav} toggleSideNav={setShowSideNav}/>
-          {showSideNav ? <SideNav /> : ''}
+          <SideNav showSideNav={showSideNav} />
           {/* Main body */}
           <div className="container-md">
             <Switch>
