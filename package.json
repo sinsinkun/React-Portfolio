@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://sinsinkun.github.io/",
+  "homepage": "https://sinsinkun.github.io/React-Portfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
