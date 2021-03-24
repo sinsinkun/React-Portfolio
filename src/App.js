@@ -30,9 +30,9 @@ function App() {
         <Router basename={process.env.PUBLIC_URL}>
           {/* Navbar */}
           <Navbar showSideNav={showSideNav} toggleSideNav={setShowSideNav}/>
-          <SideNav showSideNav={showSideNav} />
+          <SideNav showSideNav={showSideNav} toggleSideNav={setShowSideNav}/>
           {/* Main body */}
-          <div className="container-md">
+          <div className="main-body container-md">
             <Switch>
               <Route exact path="/"><Homepage /></Route>
               <Route path="/projects"><Projects /></Route>

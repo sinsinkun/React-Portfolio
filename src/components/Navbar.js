@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useEffect, useContext } from 'react';
 import { winDimContext } from '../App';
-import './style.css';
 
 function Navbar(props) {
 
@@ -20,7 +19,7 @@ function Navbar(props) {
   // desktop screen size
   if (winSize.x > 780) {
     return(
-      <nav className="navbar navbar-expand navbar-dark bg-dark sticky-top">
+      <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container-fluid">
           <div className="navbar-brand">
             React Portfolio
@@ -30,7 +29,7 @@ function Navbar(props) {
               <NavLink exact to="/" className="nav-link" activeClassName="active">About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/projects" className="nav-link" activeClassName="active">Projects</NavLink>
+              <NavLink to="/projects" className="nav-link" activeClassName="active">Past Projects</NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/contact" className="nav-link" activeClassName="active">Contact Me</NavLink>

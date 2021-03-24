@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import './style.css';
 
 function SideNav(props) {
 
@@ -25,13 +24,13 @@ function SideNav(props) {
         <div className="navbar-collapse navbar-dark">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink exact to="/" className="nav-link" activeClassName="active">About</NavLink>
+              <NavLink exact to="/" className="nav-link" activeClassName="active" onClick={() => props.toggleSideNav(false)}>About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/projects" className="nav-link" activeClassName="active">Projects</NavLink>
+              <NavLink to="/projects" className="nav-link" activeClassName="active" onClick={() => props.toggleSideNav(false)}>Past Projects</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact" className="nav-link" activeClassName="active">Contact Me</NavLink>
+              <NavLink to="/contact" className="nav-link" activeClassName="active" onClick={() => props.toggleSideNav(false)}>Contact Me</NavLink>
             </li>
           </ul>
         </div>
