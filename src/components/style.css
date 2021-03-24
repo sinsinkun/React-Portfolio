@@ -46,6 +46,15 @@
   box-shadow: none;
 }
 
+.img-fluid {
+  border: 1px solid rgb(43,47,51);
+  border-radius: 0.5rem;
+}
+
+.port-link:hover {
+  transform: scale(1.03);
+}
+
 /* Side nav */
 .side-nav {
   position: fixed;
