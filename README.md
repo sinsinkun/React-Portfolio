@@ -3,14 +3,21 @@
 # Unit 20 React Homework: React Portfolio
 
 ## Description
-Description
+This is a quick and simple portfolio site made in react with considerations for responsive design. 
+It highlights some of my personal information as well as serving as a way to display some projects 
+I have worked on in the past.
+
+Link to live website: [https://sinsinkun.github.io/UTOR-Portfolio](https://sinsinkun.github.io/UTOR-Portfolio)
 
 ## Table of Contents
 * [Usage](#usage)
 * [License](#license)
 
 ## Usage
-Run "node server" to start a local instance of the app.
+Visit the link to view the website. Screenshots below:
+
+![Screenshot 1](./screenshot-1.png)
+![Screenshot 2](./screenshot-2.png)
 
 ## License
 ISC License: Copyright (C) 2021 JingChang Xiao 
