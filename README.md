@@ -7,7 +7,7 @@ This is a quick and simple portfolio site made in react with considerations for 
 It highlights some of my personal information as well as serving as a way to display some projects 
 I have worked on in the past.
 
-Link to live website: [https://sinsinkun.github.io/UTOR-Portfolio](https://sinsinkun.github.io/UTOR-Portfolio)
+Link to live website: [https://sinsinkun.github.io/React-Portfolio/](https://sinsinkun.github.io/React-Portfolio/)
 
 ## Table of Contents
 * [Usage](#usage)
