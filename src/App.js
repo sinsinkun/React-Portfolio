@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Page404 from './components/Page404';
 import Navbar from './components/Navbar';
 import SideNav from './components/Sidenav';

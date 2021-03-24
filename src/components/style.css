@@ -77,11 +77,11 @@
 
 @keyframes sideNavSlide {
   0% {width: 0; opacity: 0;}
-  100% {width: 50vw; opacity: 100%;}
+  100% {width: 50vw; opacity: 1;}
 }
 
 @keyframes hideNavSlide {
-  0% {width: 50vw; opacity: 100%;}
+  0% {width: 50vw; opacity: 1;}
   100% {width: 0; opacity: 0;}
 }
 
