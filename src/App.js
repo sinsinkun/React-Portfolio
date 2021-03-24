@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App d-flex flex-column">
       <winDimContext.Provider value={winDim}>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           {/* Navbar */}
           <Navbar showSideNav={showSideNav} toggleSideNav={setShowSideNav}/>
           <SideNav showSideNav={showSideNav} toggleSideNav={setShowSideNav}/>
