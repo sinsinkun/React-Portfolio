@@ -17,13 +17,13 @@ function Navbar(props) {
     else props.toggleSideNav(true);
   }
   // desktop screen size
-  if (winSize.x > 780) {
-    return(
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="container-fluid">
-          <div className="navbar-brand">
-            React Portfolio
-          </div>
+  return(
+    <nav className="navbar navbar-expand navbar-dark bg-dark">
+      <div className="container-fluid">
+        <div className="navbar-brand">
+          JingChang Xiao
+        </div>
+        {winSize.x > 780 ? 
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink exact to="/" className="nav-link" activeClassName="active">About</NavLink>
@@ -34,27 +34,14 @@ function Navbar(props) {
             <li className="nav-item">
               <NavLink to="/contact" className="nav-link" activeClassName="active">Contact Me</NavLink>
             </li>
-          </ul>
-        </div>
-      </nav>
-    )
-  }
-  // mobile screen size
-  else {
-    return(
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="container-fluid">
-          <div className="navbar-brand">
-            React Portfolio
-          </div>
+          </ul> : 
           <button className="btn" style={{color:"lightgrey"}} onClick={openSideNav}>
             <span>Menu</span>
           </button>
-        </div>
-      </nav>
-    )
-  }
-
+        }
+      </div>
+    </nav>
+  )
 }
 
 export default Navbar;
